@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Свидание? 🧡</title>
+
+<style>
+
+* { box-sizing: border-box; }
+
+body {
+
+  margin: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(135deg, #ffe3e9, #fff0d9);
+
+  color: #663746;
+
+  text-align: center;
+
+}
+
+.card {
+
+  width: 100%;
+
+  max-width: 390px;
+
+  padding: 30px 20px;
+
+  background: #fffaf7;
+
+  border: 2px solid #ffd1dc;
+
+  border-radius: 30px;
+
+  box-shadow: 0 12px 35px #b76a7925;
+
+}
+
+.cats {
+
+  font-size: 54px;
+
+  margin: 8px 0 15px;
+
+  animation: float 2s ease-in-out infinite;
+
+}
+
+@keyframes float {
+
+  50% { transform: translateY(-7px); }
+
+}
+
+h1 {
+
+  font-size: 29px;
+
+  line-height: 1.2;
+
+  color: #d45d79;
+
+}
+
+p {
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+}
+
+.note {
+
+  background: #fff0f3;
+
+  border-radius: 18px;
+
+  padding: 14px;
+
+  margin: 20px 0;
+
+}
+
+button {
+
+  border: 0;
+
+  border-radius: 30px;
+
+  padding: 15px 22px;
+
+  margin: 6px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+.yes {
+
+  color: white;
+
+  background: #e77994;
+
+  box-shadow: 0 4px 0 #c95775;
+
+}
+
+.yes:active { transform: translateY(3px); }
+
+.no {
+
+  color: #a15c70;
+
+  background: #ffe5eb;
+
+}
+
+#answer {
+
+  display: none;
+
+  margin-top: 20px;
+
+  font-weight: bold;
+
+  color: #d45d79;
+
+  line-height: 1.7;
+
+}
+
+.footer {
+
+  margin-top: 22px;
+
+  font-size: 12px;
+
+  color: #b58c96;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="card">
+
+  <div class="cats">🧡🐈 🐈‍⬛🖤</div>
+
+  <div>✧･ﾟ: *✧･ﾟ:* ♡ *:･ﾟ✧*:･ﾟ✧</div>
+
+  <h1>Викуля, пойдёшь со мной на свидание?</h1>
+
+  <p>
+
+    Я хочу провести с тобой особенный день,
+
+    подарить тебе цветочки и увидеть твою
+
+    самую красивую улыбку. 💐
+
+  </p>
+
+  <div class="note">
+
+    🐈 Рыжий котик отвечает за тепло.<br>
+
+    🐈‍⬛ Чёрный котик — за магию.<br>
+
+    А я хочу, чтобы этот день был нашим. 💗
+
+  </div>
+
+  <p>Ну так что, моя хорошая? 👉👈</p>
+
+  <button class="yes" onclick="sayYes()">
+
+    ДААА! 💗
+
+  </button>
+
+  <button class="no" onclick="sayMaybe()">
+
+    А что будем делать? 🐾
+
+  </button>
+
+  <div id="answer"></div>
+
+  <div class="footer">
+
+    сделано с любовью специально для Вики ♡
+
+  </div>
+
+</main>
+
+<script>
+
+function sayYes() {
+
+  document.getElementById("answer").style.display = "block";
+
+  document.getElementById("answer").innerHTML =
+
+    "УРААА! 💗🐈‍⬛<br>Тогда это официально — у нас свидание!<br>Обещаю цветочки, нежности и уют. 🧡";
+
+}
+
+function sayMaybe() {
+
+  document.getElementById("answer").style.display = "block";
+
+  document.getElementById("answer").innerHTML =
+
+    "Цветочки 💐, вкусняшки 🍓 и время только для нас двоих. А ещё много-много обнимашек! 🐈";
+
+}
+
+</script>
+
+</body>
+
+</html>
